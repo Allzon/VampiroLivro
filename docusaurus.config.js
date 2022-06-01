@@ -9,7 +9,7 @@ const config = {
   title: "Vampiro",
   tagline: "Idade das trevas",
   url: "#",
-  baseUrl: "./",
+  baseUrl: "#",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
