@@ -9,7 +9,7 @@ const config = {
   title: "Vampiro",
   tagline: "Idade das trevas",
   url: "#",
-  baseUrl: "/",
+  baseUrl: "./",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -23,8 +23,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "pt-br",
-    locales: ["pt-br"],
+    defaultLocale: "PT-BR",
+    locales: ["PT-BR"],
   },
 
   presets: [
