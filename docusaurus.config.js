@@ -8,8 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Vampiro",
   tagline: "Idade das trevas",
-  url: "#",
-  baseUrl: "#",
+
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -82,7 +81,7 @@ const config = {
             items: [
               {
                 label: "Discord",
-                href: "#",
+                href: "https://discord.gg/vampiro",
               },
             ],
           },
@@ -91,11 +90,9 @@ const config = {
             items: [
               {
                 label: "Livro",
-                href: "#",
               },
               {
                 label: "Ficha",
-                href: "#",
               },
             ],
           },
