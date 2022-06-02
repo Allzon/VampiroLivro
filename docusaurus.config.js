@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Vampiro",
-  tagline: "Idade das trevas",
+  title: "Vampiro Idade das trevas",
+  tagline: "Livro base para o RPG",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -48,18 +48,29 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "light",
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: "Vampiro",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.png",
+          src: "img/logo.svg",
         },
         items: [
           {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Guia",
+            label: "Livro",
+          },
+          {
+            type: "doc",
+            docId: "criação-de-personagem",
+            position: "left",
+            label: "Criação de Personagem",
           },
         ],
       },
