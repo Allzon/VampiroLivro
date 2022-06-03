@@ -1,7 +1,9 @@
 ---
 sidebar_position: 1
-title: Introdução
+title: Capítulo 1
 ---
+
+<!--tags JSX-->
 
 export const Titulo = () => {
   return <b>Vampiro: A Idade das Trevas</b>;
@@ -15,8 +17,25 @@ export const Paragrafo = () => {
   );
 };
 
+export const Quadro = (props) => {
+  return (
+    <div className="quadrado-externo">
+      <div className="quadrado-line">
+        <div className="conteudo">
+          <h1>{props.titulo}</h1>
+          {props.children}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+---
+
+## Introdução
+
 > _Este mundo é só um mercado persa cheio de pensar,
-> e nós somos apenas peregrínos, passando daqui para lá:
+> e nós somos apenas peregrinos, passando daqui para lá:
 > Esse é o fim de todas as amarguras do mundo. - **Chaucer**, "The knight's tale"_
 
 <Titulo /> é ambientado no final do século XJJ, na Europa medieval - a Europa
@@ -26,8 +45,10 @@ precisar de mais informações, você pode consultar as coleções de história 
 biblioteca ou livraria mais proxima.
 <Paragrafo />
 
-Apesar do final do século XII ser a época principal em que se baseia <Titulo />, você pode ambientar suas crônicas em qualquer era.
-A maior parte das informações desse livro se aplicam à Europa até quase os primeiros sinais do Renascimento, apesar da tecnologia variar dependendo do período.
+Apesar do final do século XII ser a época principal em que se baseia <Titulo />,
+você pode ambientar suas crônicas em qualquer era.
+A maior parte das informações desse livro se aplicam à Europa até quase os primeiros sinais do Renascimento,
+apesar da tecnologia variar dependendo do período.
 Mas não se sinta preso à historia do "mundo real" - esse é o seu jogo, então faça dele o que bem quiser!
 
 ---
@@ -48,16 +69,23 @@ personagens centrais. É muito parecido com o teatro ,só que você mesmo invent
 suas falas.
 <Paragrafo />
 
-Um RPG é ao mesmo tempo teatro de improviso e brincadeira de faz-de-conta, um conjunto de regras aplicado a uma história criada por todos os envolvidos no jogo.
+Um RPG é ao mesmo tempo teatro de improviso e brincadeira de faz-de-conta,
+um conjunto de regras aplicado a uma história criada por todos os envolvidos no jogo.
 Pense nas suas brincadeiras de infância;
-toda vez que você se imaginava como um cavaleiro em armadura brilhante ou um índio com pintura de guerra, você estava interpretando.
+toda vez que você se imaginava como um cavaleiro em armadura brilhante ou um índio com pintura de guerra,
+você estava interpretando.
 Toda vez que você caçava dragões no quintal ou enfrentava os bandidos, você estava interpretando.
 Isso é algo que você vem fazendo há muito tempo; e agora tem um nome.
-Além disso, nem tudo o que você fazia em sua infância era necessariamente infantil; ao nos colocamos na pele de outras pessoas, mesmo que só um pouquinho, essas brincadeiras nos ajudavam a entendê-las (e a nós mesmos) um pouco melhor.
+Além disso, nem tudo o que você fazia em sua infância era necessariamente infantil;
+ao nos colocamos na pele de outras pessoas, mesmo que só um pouquinho,
+essas brincadeiras nos ajudavam a entendê-las (e a nós mesmos) um pouco melhor.
 
-É claro, nós já passamos da idade de nos escondermos atrás do sofá discutindo se uma flecha é ou não é mais rápida que um revólver.
-É por isso que existem regras nessa forma de interpretação., para criar a estrutura e os limites para as histórias que você vai criar.
-Usando as regras básicas apresentadas no _Capítulo Seis_, você poderá resolver os conflitos e definir as capacidades dos personagens das suas historias.
+É claro, nós já passamos da idade de nos escondermos atrás do sofá discutindo se uma
+flecha é ou não é mais rápida que um revólver.
+É por isso que existem regras nessa forma de interpretação,
+para criar a estrutura e os limites para as histórias que você vai criar.
+Usando as regras básicas apresentadas no _Capítulo Seis_, você poderá resolver
+os conflitos e definir as capacidades dos personagens das suas historias.
 
 <Titulo />, é melhor quando jogado com poucos jogadores, cinco no máximo. Esse é
 um jogo pessoal demais para ser apreciado por um grupo maior. Muito do mistério
@@ -65,7 +93,7 @@ e do sabor se perde quando têm de competir pela atenção. De fato, nós perceb
 que jogos de narrativa desse tipo funciona melhor com um narrador e um grupo de
 somente três jogadores.
 
-## O Narrador
+### O Narrador
 
 <Titulo /> tem uma estrutura um pouco diferente dos jogos com os quais você deve
 esta acostumado. Em primeiro lugar, não existem cartas nem tabuleiros. Em
@@ -82,14 +110,204 @@ contrário dos narradores tradicionais, no entanto, ele não conta simplesmente 
 história; ao invés disso, ele deve criar o esqueleto da história e então deixar
 que os jogadores a complementem, vivendo os papéis de seus personagens
 principais. É um equilíbrio delicado entre narração e julgamento, história e jogo.
-Algumas vezes ele deve guiar a cena e descrever tudo que ocorre(como quando os personagens estão dormindo),
-mas na maior parte do tempo ele deve decidir o que ocorre como consequência das palavras e ações dos personagens -
+Algumas vezes ele deve guiar a cena e descrever tudo que ocorre
+(como quando os personagens estão dormindo), mas na maior parte do tempo ele deve
+decidir o que ocorre como consequência das palavras e ações dos personagens -
 de forma tão realista, imparcial e criativa quanto possível.
 
-Como o narrador, você é o responsável por interpretar e aplicar as regras, mas ainda assim você é um mestre de cerimonias-
-você deve lutar para que o equilibrar esses dois papeis. A maior parte desse livro foi escrita para ajudá-lo a fazer isso.
+Como o narrador, você é o responsável por interpretar e aplicar as regras,
+mas ainda assim você é um mestre de cerimonias- você deve lutar para que o equilibrar esses dois papeis.
+A maior parte desse livro foi escrita para ajudá-lo a fazer isso.
 Isso não torna mais fácil ser um narrador, pois nunca será fácil, mas certamente fará você se aprimorar.
 
 O papel do narrador está explicado em detalhes no _Capítulo Oito._
 
-## Os Jogadores
+### Os Jogadores
+
+A maioria das pessoas que jogam esse jogo não serão narradores, mas sim jogadores,
+que assumem os papéis dos personagens principais na história.
+Ser um jogador não requer tanta responsabilidade quanto ser o Narrador,
+mas exige igual esforço e concentração.
+
+Como um jogador numa crônica de <Titulo />, você assumirá a personalidade
+de um vampiro, ou Cainita, que você mesmo inventará para interpretar durante o
+decorrer de uma história.A vida do seu personagem está em suas mãos,
+pois é você quem decide o que o personagem faz ou diz.
+Você decide que riscos enfrentar ou não.
+Tudo o que você diz ou faz ao interpretar seu personagem tem um efeito no mundo.
+
+Você deve ser tanto ator quanto jogador. Como ator, você
+fala por seu personagem e interpreta tudo o que deseja que seu
+personagem faça ou diga, a não ser que esteja especificamente
+fazendo uma pergunta ao Narrador ou descrevendo suas ações.
+Ao anunciar e descrever aos demais jogadores o que você está
+fazendo, você se toma parte da história corrente.
+
+Como jogador, você tenta fazer coisas que permitam ao
+seu personagem ter sucesso, algo corno "vencer o jogo". Esse
+elemento estratégico é essencial, pois é o que frequentemente
+cria a emoção e a empolgação de um momento dramático.
+
+Geralmente, após descrever as ações que "você" quer fazer,
+você precisa rolar os dados para o determinar se teve sucesso em
+fazer o que tinha dito antes. Suas Características de Personagem,
+descrições de seus pontos fortes e fracos, determinam o
+quão bem você pode fazer certas coisas. As ações são elementos
+básicos nos jogos de narrativa, pois elas descrevem como os personagens
+alteram o mundo e afetam o desenrolar da história.
+
+Os personagens são o centro da história, pois eles criam e
+direcionam a trama. Sem os personagens não se pode ter uma
+história. Enquanto a história flui, são os personagens que dirigem
+e reforçam o progresso da trama, e não as decisões do Narrador.
+
+Até certo ponto, você é um jogador mas também é narrador,
+e deve se sentir livre para acrescentar ideias e elementos à história,
+apesar do Narrador poder aceitá-los ou rejeitá-los de acordo com sua vontade.
+No fundo, é a história, e não o seu personagem, que é o mais importante.
+O personagem é uma ferramenta para se contar uma boa história, e não o inverso.
+
+### Personagens
+
+Basicamente, cada um de nós é um personagem, composto
+de maneirismos e memórias, comportamentos e experiências.
+Tudo o que somos e todos os lugares onde já estivemos se
+refletem cm cada uma de nossas palavras ou ações. Ao jogar <Titulo />,
+no entanto, é necessário que deixemos de lado nossas memórias e
+máscaras, e temos de assumir as de outra pessoa, mesmo que somente por um curto
+espaço de tempo. Isso pode ser incrivelmente divertido, dando-nos a oportunidade
+de realizar feitos que estão eternamente além de nossas vidas diárias. Afinal.
+quantos de nós conseguem espreitar as muralhas de um castelo ou cavalgar para a
+caçada na névoa do crepúsculo todos os dias?
+
+Esta é a recompensa do RPG: os feitos mágicos e impossíveis que estão ao nosso alcance quando fingimos que somos
+uma outra pessoa. E aí jaz a maior dificuldade do RPG - a criação de um personagem convincente.
+
+Seus personagens serão uma parte de você . Isso é inevitável, e se não houver nada da sua vida neles,
+não há como dar-lhes vida . Por outro lado, para ser agradável de se interpretar,
+um personagem deve ser mais do que uma parte de você.
+Afinal, você é você mesmo o tempo todo. Onde está a graça de
+ser simplesmente você mesmo quando finalmente se tem a chance de ser outra pessoa?
+Para tomar seus personagens convincentes, você deve dar a eles memórias e motivos por trás de
+suas ações, desejos únicos e peculiaridades que fazem deles mais do que simples aspectos de sua personalidade.
+Cada personagem deve ser único, formado por partes iguais de experiências e fantasias.
+
+Os personagens de <Titulo /> são fáceis de se criar. Demora apenas alguns minutos para preencher todas as
+características e números básicos. É necessário um esforço maior para transformar esse conjunto de
+números num personagem vivo e atuante. ar esse conjunto de n(1meros
+num personagem vivo e atuante. Você deve buscar bem fundo
+dentro de si mesmo para encontrar material real e verdadeiro o
+suficiente para produzir um personagem completo. O monstro
+do Dr. Frankenstein foi fácil de se montar com partes de corpos disponíveis.
+Infundir-lhe o sopro da vida é que foi a parte mais difícil.
+
+A Criação de Personagem é discutida em detalhes no Capítulo Cinco.
+
+### Círculos
+
+Assume-se que todos os personagens serão aliados, e que durante os jogos eles atuarão em grupo.
+Isso não significa que sempre se darão bem, mas eles protegerão uns aos outros e partilharão de algumas ambições em comum.
+Chamados de Círculos, esses grupos de vampiros podem ser encontrados desde os salões do poder até os guetos mais obscuros.
+Na maioria dos casos, o Círculo de personagens abrangerá todos os vampiros jovens de uma determinada área,
+a não ser nas maiores cidades como Veneza ou Constantinopla. Seja o grupo unido por um interesse comum, um mesmo inimigo ou
+simples sobrevivência, não é difícil de se perceber que é mais seguro agir em grupo. Um jovem Cainita sozinho enfrentará
+dificuldades além daquelas enfrentadas por um grupo, e é desse grupo que cada personagem passará a depender.
+É o círculo que une os personagens e permite aos jogadores trabalharem juntos no curso da história.
+
+### Acessórios de jogo
+
+Em sua maior parte, <Titulo /> foi criado para ser jogado em volta de uma mesa.
+Apesar de não utilizar um tabuleiro, existem vários acessórios que necessitam
+de uma mesa - ou pelo menos uma superfície lisa - para serem usados corretamente.
+Você precisará de dados, lápis e papel além de cópias das planilhas de personagens.
+Os dados necessários são os de 10 lados, que podem ser encontrados nas lojas especializadas.
+O Narrador também pode querer manter algumas folhas de papel à mão para desenhar
+esquemas e esboços de um local (para descrevê-lo mais facilmente para os jogadores),
+assim como alguns outros acessórios para mostrar aos jogadores o que os personagens
+estão vendo (desenhos, velas, lenços - qualquer coisa que torne a experiência mais vívida).
+
+<Quadro titulo={"Vencedores e Perdedores"}>
+  <p>
+    Não há "vencedores" individuais em <Titulo />, já que o objetivo não é
+    derrotar os outros jogadores. Para vencer, você precisa cooperar com os
+    demais jogadores. Por ser um jogo de narrativa, não há como alguém se dizer
+    vencedor. De fato, <b>Vampiro</b> é um jogo no qual é mais provável que seu
+    personagem seja derrotado, pois é difícil fazer qualquer coisa para impedir
+    a inevitável queda de seu personagem em direção à Loucura. A ideia central é
+    se apegar o máximo possível e extrair o máximo de drama da tragédia
+    iminente.
+  </p>
+  <p>
+    A única maneira de se medir o sucesso em <b>Vampiro</b> é a sobrevivência.
+    No entanto, se o personagem possui alguma motivação maior, tal como a
+    necessidade de vingança, consegui-la já é um sinal de vitória. Além disso,
+    as histórias têm conclusões que ou beneficiam ou prejudicam os personagens.
+    Se os personagens descobrem que um assassino é na realidade um vampiro e
+    conseguem impedir seus ataques, então eles "vencem". Se jamais descobrir.em
+    quem estava por trás dos assassinatos (muito menos impedi-los), então eles
+    perdem, apesar de não o saberem até ser tarde demais.
+  </p>
+  <p>
+    De modo a obter até mesmo uma vitória parcial, os personagens devem se
+    tornar amigos de verdade. Eles cuidam uns dos outros e têm confiança mútua.
+    O Mundo das Trevas Medieval é tão perigoso e traiçoeiro que os aliados são
+    essenciais.
+  </p>
+</Quadro>
+
+### Ação Ao Vivo
+
+A interpretação Ao Vivo pode ser a parte mais dinâmica e divertida de se jogar <Titulo />.
+A interpretação de ação ao vivo é similar ao teatro de improviso;
+os atores (os jogadores) interpretam as cenas criadas e apresentadas pelo Narrador.
+Isso cria uma experiência narrativa muito mais intensa e imediata.
+
+Os jogadores de RPG geralmente descrevem o que seus personagens fazem e dizem.
+Durante a interpretação de ação ao vivo, no entanto, os jogadores realmente dizem o que seus
+personagens dizem e fazem o que seus personagens fazem (dentro de certos limites).
+Eles podem se levantar, caminhar, segurar uma carta, cumprimentar-se ou correr até a janela
+para verificar o que está acontecendo.
+A imaginação ainda é importante, e o Narrador ainda pode interromper a ação para descrever objetos e situações especiais.
+
+Não se usa os dados durante sessões de ação ao vivo; regras alternativas, como as descritas na linha de produtos para ação
+ao vivo Mind's Eye Theatre, substituem os dados quando necessário.
+Na maior parte do tempo, tudo é decidido pela atuação. O Narrador usa simplesmente as características dos personagens para
+decidir quão bem os personagens conseguem realizar certas ações mecânicas (como arrombar uma fechadura).
+O Narrador também decide como os outros personagens controlados por ele reagem aos personagens dos jogadores.
+
+### Regras
+
+Você deve seguir algumas regras básicas para se assegurar
+de que a ação ao vivo transcorra suave e seguramente. Essas
+regras devem ser obedecidas se você pretende realizar uma
+sessão de ação ao vivo. A segurança deve ser sua preocupação
+principal.
+
+- **Não Toque:** Um jogador jamais deve realmente atingir ou segurar outro membro do grupo.
+  Nenhuma forma de combate deve ser realizada - essa é a única coisa que você deve
+  deixar para que os dados decidam. Se os jogadores ou os assistentes do Narrador ficarem muito
+  agitados em seus papéis, o Narrador deve determinar uma pausa na interpretação e lembrar a todos das regras do jogo.
+  Reforce que os mais agressivos serão expulsos, ou então a ação deve ser levada de volta à mesa
+  e os conflitos decididos com rolamentos de dados.
+
+- **Sem Armas:** Nenhum acessório deve ser usado se for
+  necessário tocar outra pessoa para utilizá-lo. Nenhuma espécie
+  de arma real deve ser usada durante a ação ao vivo. Nem
+  mesmo imitações de espadas devem ser usadas. A regra "não
+  toque" deve sempre ser lembrada.
+
+- **Jogue em ambientes fechados:**
+  Jogue dentro de sua própria casa ou em qualquer outra área
+  particular onde o jogo aconteça normalmente. Certifique-se
+  de que todas as demais pessoas na área compreendam o que
+  vocês estão fazendo. Nunca realize sessões de ação ao vivo
+  se as pessoas puderem ficar confusas ou assustadas pelo evento.
+  Se você jogar mun espaço aberto, assim como o bosque atrás da
+  sua casa, tenha certeza de que a privacidade seja assegurada.
+
+- **Saiba quando parar:** Quando o Narrador determinar uma pausa,
+  todas as ações devem parar imediatamente. Mesmo durante a ação
+  ao vivo (e especialmente durante a ação ao vivo), a palavra do
+  Narrador é final.
+
+## A Gênese
