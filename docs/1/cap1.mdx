@@ -5,30 +5,8 @@ title: Capítulo 1
 ---
 
 import Link from "@docusaurus/Link";
-export const Titulo = () => {
-  return <b>Vampiro: A Idade das Trevas</b>;
-};
-
-export const Paragrafo = () => {
-  return (
-    <div>
-      <br />
-    </div>
-  );
-};
-
-export const Quadro = (props) => {
-  return (
-    <div className="quadrado-externo">
-      <div className="quadrado-line">
-        <div className="conteudo">
-          <h1>{props.titulo}</h1>
-          {props.children}
-        </div>
-      </div>
-    </div>
-  );
-};
+import { Titulo, Paragrafo } from "@site/src/components/Title";
+import Quadro from "@site/src/components/Quadro";
 
 ---
 

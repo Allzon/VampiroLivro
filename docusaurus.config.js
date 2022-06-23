@@ -49,18 +49,20 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: "light",
+        defaultMode: "dark",
         disableSwitch: false,
         respectPrefersColorScheme: false,
-      } /*
+      },
       navbar: {
         title: "Vampiro",
+        hideOnScroll: true,
         logo: {
-          alt: "My Site Logo",
+          alt: "Vampiro Idade das Trevas",
           src: "img/logo.svg",
+          srcDark: "img/logoDark.svg",
         },
         items: [],
-      },
+      } /*,
       footer: {
         style: "dark",
         links: [
