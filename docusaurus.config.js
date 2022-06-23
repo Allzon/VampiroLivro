@@ -52,7 +52,7 @@ const config = {
         defaultMode: "light",
         disableSwitch: false,
         respectPrefersColorScheme: false,
-      },
+      } /*
       navbar: {
         title: "Vampiro",
         logo: {
@@ -65,39 +65,16 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
-            items: [
-              {
-                label: "Guias",
-                to: "/",
-              },
-            ],
+            label: "Guias",
+            to: "/",
           },
           {
-            title: "Community",
-            items: [
-              {
-                label: "Discord",
-                href: "#",
-              },
-            ],
-          },
-          {
-            title: "Download",
-            items: [
-              {
-                label: "Livro",
-                href: "#",
-              },
-              {
-                label: "Ficha",
-                href: "#",
-              },
-            ],
+            label: "Discord",
+            href: "#",
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
+      },*/,
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
