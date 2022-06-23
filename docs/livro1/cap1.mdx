@@ -1,34 +1,33 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 title: Capítulo 1
 ---
 
 import Link from "@docusaurus/Link";
 export const Titulo = () => {
-    return <b>Vampiro: A Idade das Trevas</b>;
-  };
+  return <b>Vampiro: A Idade das Trevas</b>;
+};
 
 export const Paragrafo = () => {
-    return (
-      <div>
-        <br />
-      </div>
-    );
-  };
+  return (
+    <div>
+      <br />
+    </div>
+  );
+};
 
 export const Quadro = (props) => {
-    return (
-      <div className="quadrado-externo">
-        <div className="quadrado-line">
-          <div className="conteudo">
-            <h1>{props.titulo}</h1>
-            {props.children}
-          </div>
+  return (
+    <div className="quadrado-externo">
+      <div className="quadrado-line">
+        <div className="conteudo">
+          <h1>{props.titulo}</h1>
+          {props.children}
         </div>
       </div>
-    );
-  };
-
+    </div>
+  );
+};
 
 ---
 
