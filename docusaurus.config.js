@@ -61,7 +61,18 @@ const config = {
           src: "img/logo.svg",
           srcDark: "img/logoDark.svg",
         },
-        items: [],
+        items: [
+          {
+            to: "/",
+            label: "Livro",
+            position: "left",
+          },
+          {
+            to: "tables",
+            label: "Tabelas",
+            position: "left",
+          },
+        ],
       } /*,
       footer: {
         style: "dark",
