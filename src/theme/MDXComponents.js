@@ -1,8 +1,8 @@
 import React from "react";
 // Import the original mapper
 import MDXComponents from "@theme-original/MDXComponents";
-import { Titulo, Paragrafo } from "@site/src/components/title";
-import Quadro from "@site/src/components/Quadro";
+import { Titulo, Paragrafo } from "../components/Title";
+import Quadro from "../components/Quadro";
 
 export default {
   // Re-use the default mapping
