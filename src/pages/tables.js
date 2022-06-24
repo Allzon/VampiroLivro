@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import TableClans from "/docs/_tables/_clans.mdx";
+import TableClans from "/docs/_contents/_clans.mdx";
 
 export default function Hello() {
   return (
