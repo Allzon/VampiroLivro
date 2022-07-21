@@ -38,6 +38,14 @@
 * h3 {
   font-family: "Grenze Gotisch", cursive;
 }
+.quadrado-externo {
+  border: 4px inset #999;
+  margin: 2%;
+}
+
+.quadrado-line {
+  border: 5px solid #000;
+}
 .conteudo {
   border: 4px solid #999;
   padding: 10px;
@@ -46,16 +54,33 @@
   font-size: 0.9rem;
   font-weight: bold;
   font-family: "Viaoda Libre", cursive;
+  text-align: justify;
 }
 .conteudo h1 {
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: "Viaoda Libre", cursive;
-}
-.quadrado-externo {
-  border: 4px inset #999;
 }
 
-.quadrado-line {
-  border: 5px solid #000;
+.conteudo-flex {
+  border: 4px solid #999;
+  padding: 10px;
+}
+@media (min-width: 600px) {
+  .conteudo-flex {
+    display: flex;
+  }
+}
+.conteudo-flex div {
+  padding: 0.2rem;
+}
+
+.conteudo-flex p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: "Viaoda Libre", cursive;
+  text-align: justify;
+}
+.conteudo-flex h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
