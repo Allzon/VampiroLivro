@@ -29,7 +29,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 @import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Poppins&display=swap");
 * {
   font-family: "Poppins", sans-serif;
 }

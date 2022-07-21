@@ -8,20 +8,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Vampiro Idade das trevas",
   tagline: "Livro base para o RPG",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://vampiro-livro.vercel.app",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "None", // Usually your GitHub org/user name.
-  projectName: "VampiroLivro", // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  organizationName: "Allzon",
+  projectName: "VampiroLivro",
   i18n: {
     defaultLocale: "pt-BR",
     locales: ["pt-BR"],
@@ -73,10 +66,10 @@ const config = {
             position: "left",
           },
         ],
-      } /*,
+      },
       footer: {
         style: "dark",
-        links: [
+        /*links: [
           {
             label: "Guias",
             to: "/",
@@ -85,9 +78,9 @@ const config = {
             label: "Discord",
             href: "#",
           },
-        ],
+        ],*/
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },*/,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
