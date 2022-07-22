@@ -29,7 +29,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 @import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Grenze:ital,wght@1,200&family=Poppins:ital@0;1&display=swap");
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -37,6 +37,11 @@
 * h2,
 * h3 {
   font-family: "Grenze Gotisch", cursive;
+}
+* h1 em,
+* h2 em,
+* h3 em {
+  font-family: "Grenze", serif;
 }
 .quadrado-externo {
   border: 4px inset #999;
